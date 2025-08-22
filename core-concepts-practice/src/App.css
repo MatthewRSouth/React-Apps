@@ -4,20 +4,36 @@
     padding: 2rem;
     text-align: center;
 }
+html {
+    background: #0b1b38;
+    background: linear-gradient(
+        180deg,
+        rgb(22, 61, 135) 25%,
+        rgba(29, 112, 111, 1) 75%
+    );
+}
 .cardContainer {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    height: 60vh;
 }
-
+.card {
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 40rem;
+    width: 28rem;
+    border: 2px solid black;
+    border-radius: 10px;
+    text-align: center;
+}
+.card-item {
+    margin: 20px;
+}
 .logo {
     height: 6em;
     padding: 1.5em;
     will-change: filter;
     transition: filter 300ms;
-}
-
-.logo.react:hover {
-    filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
 @keyframes logo-spin {
@@ -33,4 +49,8 @@
     a:nth-of-type(2) .logo {
         animation: logo-spin infinite 20s linear;
     }
+}
+
+.display-card {
+    border: #0b1b38;
 }
